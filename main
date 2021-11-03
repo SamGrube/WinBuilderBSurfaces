@@ -1,0 +1,159 @@
+package billiardWindow;
+
+import java.awt.EventQueue;
+
+import java.lang.Math;
+import java.awt.Graphics;
+import javax.swing.JFrame;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JSlider;
+import javax.swing.JPanel;
+import java.awt.Frame;
+import java.awt.Window.Type;
+import java.awt.Color;
+import javax.swing.JEditorPane;
+import java.awt.Canvas;
+import java.awt.Font;
+import javax.swing.text.html.LineView;
+import javax.swing.text.Element;
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeEvent;
+
+
+
+public class billiardWindow {
+
+	private JFrame frame;
+	private JTextField textField;
+	private JTextField textField_1;
+	private JTextField textField_2;
+	private JTextField textField_3;
+	private Graphics g;
+
+	/**
+	 * Launch the application.
+	 */
+	
+	
+	
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					billiardWindow window = new billiardWindow();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public billiardWindow() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	
+	public void initialize() {
+		frame = new JFrame();
+		frame.getContentPane().setForeground(new Color(0, 0, 0));
+		frame.getContentPane().setFont(new Font("Tahoma", Font.PLAIN, 11));
+		frame.setBackground(new Color(240, 240, 240));
+		frame.setType(Type.POPUP);
+		frame.setUndecorated(false);
+		frame.setVisible(true);
+		frame.setBounds(100, 100, 800, 600);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		
+		JLabel lblNewLabel = new JLabel("Angle 1");
+		lblNewLabel.setBounds(33, 27, 73, 14);
+		frame.getContentPane().add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("Angle 2");
+		lblNewLabel_1.setBounds(159, 27, 48, 14);
+		frame.getContentPane().add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("Trajectory Position");
+		lblNewLabel_2.setBounds(290, 27, 114, 14);
+		frame.getContentPane().add(lblNewLabel_2);
+		
+		JLabel lblNewLabel_3 = new JLabel("Trajectory Angle");
+		lblNewLabel_3.setBounds(420, 27, 96, 14);
+		frame.getContentPane().add(lblNewLabel_3);
+		
+		textField = new JTextField();
+		textField.setBounds(30, 52, 90, 20);
+		frame.getContentPane().add(textField);
+		textField.setColumns(10);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(160, 52, 90, 20);
+		frame.getContentPane().add(textField_1);
+		textField_1.setColumns(10);
+		
+		textField_2 = new JTextField();
+		textField_2.setBounds(290, 52, 90, 20);
+		frame.getContentPane().add(textField_2);
+		textField_2.setColumns(10);
+		
+		textField_3 = new JTextField();
+		textField_3.setBounds(420, 52, 90, 20);
+		frame.getContentPane().add(textField_3);
+		textField_3.setColumns(10);
+		
+		JButton btnNewButton = new JButton("Begin Simulation");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		
+		btnNewButton.setBounds(581, 51, 160, 23);
+		frame.getContentPane().add(btnNewButton);
+		
+		
+		
+		Canvas canvas = new Canvas();
+		canvas.addPropertyChangeListener(new PropertyChangeListener() {
+			public void propertyChange(PropertyChangeEvent evt) {
+			}
+		});
+		canvas.setBounds(14, 78, 760, 477);
+		//canvas.(new Graphics()) {
+		//	public void paint(Graphics g) {
+		//		g.drawLine(30,500,300,500);
+		//	}
+		//});
+		
+		
+		frame.getContentPane().add(canvas);
+		
+		
+	}
+
+
+
+int newY = round(tan(phi1)*x);
+int newX = round(L*sin(phi2)*cos(phi1) / sin(phi1 + phi2))
+/**
+ * @wbp.nonvisual location=63,258
+ */
+private final LineView lineView = new LineView((Element) null););
+
+line0 = g.drawLine(30,)
+
+}
+
+
